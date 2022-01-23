@@ -1,0 +1,17 @@
+{
+    "name": "Restoku App",
+    "short_name": "Restoku",
+    "description": "A website to find your favorite restaurant",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ce1212",
+    "icons": [
+      {
+        "src": "images/favicon/favicon.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any maskable"
+      }
+    ]
+  }

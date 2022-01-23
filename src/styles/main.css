@@ -1,0 +1,371 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #424242;
+}
+
+/* AppBar */
+
+.app-bar {
+    min-height: 56px;
+}
+
+.app-bar__menu {
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.app-bar__brand{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 3em;
+    color: #ce1212;
+    margin: 0.5em 0.25em;
+    display: inline-block;
+}
+
+.header-menu {
+    font-size: 32px;
+    margin: 10px auto;
+    display: block;
+    min-width: 44px;
+    min-height: 44px;
+    color: #ce1212;
+    border: none;
+    background-color: #fff;
+}
+
+/* Top level navigation */
+
+.app-bar__navigation {
+    width: 100%;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.nav-list {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.app-bar__navigation a {
+    display: inline-block;
+    padding: 1em;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #616161;
+}
+
+.app-bar__navigation a:hover {
+    text-decoration: none;
+    background-color: #ce1212;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+/* Hero */
+
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: 400px;
+    width: 100%;
+    text-align: center;
+    background-image: url("/images/heros/hero.jpg");
+    background-position: center;
+    background-color: black;
+    background-attachment: fixed;
+    opacity: 100%;
+}
+
+.hero-inner {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.hero-title {
+    color: #fff;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.hero-tagline {
+    color: #fff;
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* skip to content */
+.skip-link {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    background-color: #ce1212;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+    min-height: 44px;
+ }
+  
+ .skip-link:focus {
+    top: 0;
+ }
+
+/* main */
+
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* content */
+
+.content {
+    padding: 32px;
+}
+
+
+/* list */
+
+.list {
+    width: 100%;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.list-label {
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.list-label::after {
+    content: '';
+    margin-top: 16px;
+    display: block;
+    border-bottom: 1px solid #eeeeee;
+}
+
+/* restaurant */
+
+.restaurant {
+    margin: 32px auto auto;
+    text-align: left;
+}
+
+/* restaurant item */
+
+.restaurant-item {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.restaurant-item-content {
+    padding: 16px;
+    margin-top: -30px;
+}
+
+.restaurant-item-location {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ce1212;
+    color: #fff;
+    font-weight: bold;
+    width: 30%;
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+    text-align: center;
+}
+
+.restaurant-item-thumbnail {
+    width: 100%;
+}
+
+.restaurant-item-rating {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #999;
+    font-weight: bold;
+}
+
+.restaurant-item-rating-star {
+    font-size: 14px;
+    color: rgb(255, 153, 0);
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.restaurant-item-title {
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+.restaurant-item-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.restaurant-item-description {
+    margin-top: 16px;
+    font-size: 12px;
+    line-height: 1.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.restaurant-item-button {
+    border: none;
+    display: block;
+    padding: 8px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    width: 100%;
+    min-height: 44px;
+    font-size: 18px;
+}
+
+.restaurant-item-button:hover {
+    background-color: #ce1212;
+  }
+
+
+/* Restaurant Detail */
+.restaurant {
+    margin: 32px auto auto;
+    text-align: left;
+}
+
+.restaurant-menu, .restaurant-review, .restaurant-info  {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.restaurant-item-detail {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.restaurant-item-thumbnail-detail {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.restaurant-item-title-detail {
+    font-weight: bold;
+    margin: 16px;
+    color: #ce1212;
+}
+
+.restaurant-item-description-detail {
+    margin: 16px;
+    font-size: 12px;
+    line-height: 1.5em;
+    overflow: hidden;
+}
+
+.restaurant-label {
+    font-weight: bold;
+    margin: 16px;
+    color: #ce1212;
+}
+
+.restaurant-text {
+    font-weight: lighter;
+    margin: 16px;
+}
+
+.chips li{
+    display: inline-block;
+    padding: 0 25px;
+    margin: 16px 0 0 0;
+    height: 50px;
+    font-size: 14px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+    transition: 0.3s;
+}
+.chips li:hover{
+    display: inline-block;
+    padding: 0 25px;
+    margin: 16px 0 0 0;
+    height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 50px;
+    border-radius: 25px;
+    color: #fff;
+    background-color: #ce1212;
+}
+
+.review{
+    display: block;
+    padding: 0 25px;
+    margin: 16px 0 0 0;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+}
+
+.like {
+    font-size: 18px;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    background-color: #ce1212;
+    color: white;
+    border: 0;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* footer */
+
+ footer {
+    background-color: #ce1212;
+    color: #fff;
+    padding: 3em;
+    width: 100%;
+    text-align: center;
+}
